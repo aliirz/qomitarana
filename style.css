@@ -26,7 +26,23 @@ body {
   color: black;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  line-height: 50%;
+}
+
 .column {
+  text-align: center;
+  font-size: calc(1.6vw + 1.8vh);
   float: left;
   width: 50%;
 }
@@ -35,12 +51,4 @@ body {
   content: "";
   display: table;
   clear: both;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-  margin-top: 60px;
 }
