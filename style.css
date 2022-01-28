@@ -17,6 +17,9 @@
 
 @media screen and (max-width: 600px) {
   .column {
+    text-align: center;
+    font-size: calc(1.6vw + 1.8vh);
+    float: left;
     width: 100%;
   }
 }
