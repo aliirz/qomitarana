@@ -1,121 +1,68 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="description" content="">
-    <meta name="keywords" content="Pakistan, Anthem, National Anthem">
-    <meta name="author" content="John Doe">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @font-face {
-            font-family: "nastaliq";
-            src: url(./fonts/NotoNastaliqUrdu-Regular.ttf);
-        }
-
-        @font-face {
-            font-family: "nastaliq";
-            src: url(./fonts/NotoNastaliqUrdu-Bold.ttf);
-            font-weight: bold;
-        }
-        @font-face {
-            font-family: "nastaliq-kasheed";
-            src: url(./fonts/JameelNooriNastaleeqKasheeda.ttf);
-            font-style: italic;
-        }
-
-        body {
-            font-family: "nastaliq-kasheed";
-            color: #0F742AFF;
-
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            grid-gap: 10px;
-            /* background-color: #2196F3; */
-            padding: 10px;
-            margin-top: 60px;
-        }
-
-        .grid-container>div {
-            /* background-color: rgba(255, 255, 255, 0.8); */
-            /* border: 1px solid black; */
-            text-align: center;
-            font-size: 23px;
-        }
-
-        .item1 {
-            grid-column: 1 / 5;
-        }
-
-        .item2 {
-            grid-column: 1 / 3;
-        }
-
-        .item3 {
-            grid-column: 3 / 5;
-        }
-    </style>
+    <meta name="description" content="" />
+    <meta name="keywords" content="Pakistan, Anthem, National Anthem" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>National Anthem of Pakistan | قومی ترانہ</title>
   </head>
+
   <body>
-    <div class="grid-container">
-        <div class="item1" style="font-weight: bold;">
-            قومی ترانہ
-        </div>
-        <div class="item2">
-            کشورِ حسین شاد باد
-        </div>
-        <div class="item3">
-            پاک سرزمین شاد باد
-        </div>
-        <div class="item2">
-            ارضِ پاکستان!‏
-        </div>
-        <div class="item3">
-            تُو نشانِ عزمِ عالی شان
-        </div>
-        <div class="item1">
-            مرکزِ یقین شاد باد
-        </div>
-        <div class="item2">
-            قوّتِ اُخوّتِ عوام
-        </div>
-        <div class="item3">
-            پاک سرزمین کا نظام
-        </div>
-        <div class="item2">
-            پائندہ تابندہ باد
-        </div>
-        <div class="item3">
-            قوم، ملک، سلطنت
-        </div>
-        <div class="item1">
-            شاد باد منزلِ مراد
-        </div>
-        <div class="item2">
-            رہبرِ ترقّی و کمال
-        </div>
-        <div class="item3">
-            پرچمِ ستارہ و ہلال
-        </div>
-        <div class="item2">
-            !جانِ استقبال
-        </div>
-        <div class="item3">
-            ترجمانِ ماضی، شانِ حال
-        </div>
-        <div class="item1">
-            سایۂ خدائے ذوالجلال
-        </div>
+    <div class="header">
+      <h1>قومی ترانہ</h1>
+      <h2>National Anthem of Pakistan</h2>
+    </div>
 
-
+    <div class="row">
+      <div class="column">
+        <div class="item2">کشورِ حسین شاد باد</div>
+        <div class="item2">ارضِ پاکستان!‏</div>
+        <div class="item3">پاک سرزمین کا نظام</div>
+        <div class="item3">قوم، ملک، سلطنت</div>
+        <div class="item1">شاد باد منزلِ مراد</div>
+        <div class="item2">رہبرِ ترقّی و کمال</div>
+        <div class="item2">!جانِ استقبال</div>
       </div>
-      <script>
-          setTimeout(()=>{
-                document.getElementById('vid').play();
-                document.getElementById('vid').muted = false;
-          },500)
-      </script>
+      <div class="column">
+        <div class="item3">پاک سرزمین شاد باد</div>
+        <div class="item3">تُو نشانِ عزمِ عالی شان</div>
+        <div class="item3">مرکزِ یقین شاد باد</div>
+        <div class="item2">قوّتِ اُخوّتِ عوام</div>
+        <div class="item2">پائندہ تابندہ باد</div>
+        <div class="item3">پرچمِ ستارہ و ہلال</div>
+        <div class="item3">ترجمانِ ماضی، شانِ حال</div>
+        <div class="item1">سایۂ خدائے ذوالجلال</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+    <script>
+      setTimeout(() => {
+        document.getElementById("vid").play();
+        document.getElementById("vid").muted = false;
+      }, 500);
+
+      function addDarkmodeWidget() {
+        const options = {
+          bottom: "32px",
+          right: "unset",
+          left: "16px",
+          time: "0.25s",
+          mixColor: "#ebe9e8",
+          backgroundColor: "#fff",
+          buttonColorDark: "#141617",
+          buttonColorLight: "#fff",
+          saveInCookies: true,
+          label: "🌓",
+          autoMatchOsTheme: true,
+        };
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+      }
+      window.addEventListener("load", addDarkmodeWidget);
+    </script>
   </body>
 </html>

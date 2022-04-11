@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "nastaliq";
+  src: url(./fonts/NotoNastaliqUrdu-Regular.ttf);
+}
+
+@font-face {
+  font-family: "nastaliq";
+  src: url(./fonts/NotoNastaliqUrdu-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "nastaliq-kasheed";
+  src: url(./fonts/JameelNooriNastaleeqKasheeda.ttf);
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    text-align: center;
+    font-size: calc(1.6vw + 1.8vh);
+    float: left;
+    width: 100%;
+  }
+}
+
+body {
+  font-family: "nastaliq-kasheed";
+  color: black;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  line-height: 50%;
+}
+
+.column {
+  text-align: center;
+  font-size: calc(1.6vw + 1.8vh);
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
