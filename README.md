@@ -8,11 +8,9 @@ Super simple, Open Source & Built with ❤️. Help maintain it and grow.
 
 
 ## Future Roadmap (maybe)
-1. English Translation
-2. Links to videos
-3. Dark mode (for those among us)
-4. who knows..
-
+- [ ] English Translation
+- [ ] Links to videos
+- [x]  Dark mode (for those among us)
 
 Feel like you can contribute? Please do!
 
